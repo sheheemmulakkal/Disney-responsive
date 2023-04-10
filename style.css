@@ -1,0 +1,35 @@
+.nav-logo img{
+    width: 95px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Max width 767px --- To adjust to small devices */
+
+@media (max-width: 767px) {
+    .carousel-item img {
+      height: 40vh;
+      object-fit: cover;
+    }
+
+    .carousel{
+        position: relative;
+    }
+    .carousel-indicators{
+        position: absolute;
+        bottom: -100px;
+    }
+  }
