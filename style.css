@@ -1,13 +1,116 @@
+*{
+    overflow-x: hidden;
+}
 .nav-logo img{
     width: 95px;
 
 }
+.nav-logo img{
+    margin-right: 10px;
+
+}
+.nav-item{
+    margin-left: 20px;
+}
 
 
+.first-section li{ 
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.shop-card{
+    position: relative;
+    margin: 10px 0; 
+}
+.shop-card img{
+    height: 100%;
+    width: 100%;
+}
+
+.shop-card-sm a{
+    margin: 25px 0;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.shop-card-sm img{
+
+    width: 100%;
+}
+
+.card-texts{
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    background: linear-gradient(to top, rgba(0,0,0,.9),transparent);
+    
+}
+.card-texts div{
+    margin: 10px 0;
+}
+.card-texts a{
+    color: #fff;
+    text-decoration: none;
+}
+.carousel-button-section{
+    height: 20vh;
+}
+.second-section{
+    background-color: #EEEEEE;
+}
+.second-section-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.second-section h1,h5{
+    overflow: hidden;
+    font-weight: 500;
+}
+.card a{
+    text-decoration: none;
+     color: #000;
+}
+.card{ 
+    border:none;
+    background-color: #EEEEEE;
+}
+
+.explore-card h6{
+    
+    overflow: hidden;
+    font-size: .9rem;
+}
+.explore-card p{
+    font-size: 1.3rem;
+    width: 80%;
+}
+
+.more-from-disney{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
+.more-from-disney h5{
+    overflow: hidden;
+    font-size: .9rem;
+}
 
-
+.more-from-disney h6{
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
 
 
 
@@ -20,16 +123,37 @@
 /* Max width 767px --- To adjust to small devices */
 
 @media (max-width: 767px) {
-    .carousel-item img {
-      height: 40vh;
-      object-fit: cover;
-    }
 
+    .carouselExampleIndicators{
+        height: 60vh;
+    }
     .carousel{
         position: relative;
+        height: 50vh;
+        margin-bottom: 10vh;
     }
     .carousel-indicators{
         position: absolute;
-        bottom: -100px;
+        bottom: -20px;
+        overflow: hidden;
+        
     }
+    .carousel-indicators
+    [data-bs-target]{
+        background-color: #818181;
+    }
+    .carousel-indicators .active{
+        background-color: #003cff;
+    }
+
+    
   }
+
+  @media (max-width: 767px){
+    .shop-card{
+        margin:20px 0;
+  }
+
+}
+
+
