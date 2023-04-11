@@ -112,12 +112,66 @@
     font-size: 1.2rem;
 }
 
+.footer-logo img{
+    width: 100px;
+}
+.footer-list ul{
+    justify-content: center;
+    align-items: center;
+}
+.footer-list ul li{
+    list-style: none;
+    display: inline;
+}
 
+.footer-list ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
 
+.first-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-logo-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+.footer-icons li{
+    align-items: center;
+display: flex;
+list-style: none;
+display: inline;
+margin: 0 10px;
+}
 
+.footer-icons li a{
+    color: #000;
+    font-size: 1.6rem;
+}
+.footer-final-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-final-logo img{
+    width: 80px;
+}
 
-
+.footer-final-list li{
+    display: inline;
+    margin: 0 15px;
+    
+    
+}
+.footer-final-list li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+}
 
 
 /* Max width 767px --- To adjust to small devices */
@@ -131,6 +185,7 @@
         position: relative;
         height: 50vh;
         margin-bottom: 10vh;
+        overflow: hidden;
     }
     .carousel-indicators{
         position: absolute;
@@ -146,14 +201,23 @@
         background-color: #003cff;
     }
 
-    
-  }
-
-  @media (max-width: 767px){
     .shop-card{
         margin:20px 0;
   }
 
-}
+  .first-row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-logo-list{
+    display: flex;
+    flex-direction: column;
+  }
+    .footer-list ul li{
+        display: list-item;
+    } 
+  }
+
 
 
