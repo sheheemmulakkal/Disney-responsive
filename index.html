@@ -22,6 +22,7 @@
     <!-- Style.css link -->
     <link rel="stylesheet" href="style.css">
 
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/logo.png">
 
@@ -197,7 +198,7 @@
 
 
           <!-- Second Section -->
-            <Section class="second-section  p-5">
+            <Section id="second-section" class="second-section  p-5">
 
 
               <!-- Featured Ads -->
@@ -299,6 +300,9 @@
 
                </div>
 
+               <div class="">
+                <button type="button" onclick="changeColor()">Change background color</button>
+               </div>
 
             </Section>
 
@@ -371,5 +375,16 @@
 
           
 
+
+      <script>
+        function changeColor(){
+    var bg = document.getElementById("second-section");
+    if(bg.style.backgroundColor === "yellow"){
+      bg.style.backgroundColor = "#EEEEEE";
+    }else{
+      bg.style.backgroundColor = "yellow";
+    }
+ }
+      </script>    
 </body>
 </html>
